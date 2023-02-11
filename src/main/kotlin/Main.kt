@@ -1,21 +1,16 @@
 fun main() {
-
-//    *************
-//    .***********
-//    ..*********
-//    ...*******
-//    ....*****
-//    .....***
-//    ......*
-
-    var space=""
-    for (i in 7 downTo 1) {
-        print(space)
-        for (j in i*2-1 downTo 1  ) {
-
-            print("*")
+//        *
+//       **
+//      ***
+//     ****
+//    *****
+    var stars = ""
+    for (i in 1..5) {
+        for (j in 5 downTo i) {
+            print(" ")
         }
+        stars=stars+"*"
+        print(stars)
         println()
-        space = space + "."
     }
 }
