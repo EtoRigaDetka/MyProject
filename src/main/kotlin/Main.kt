@@ -1,16 +1,17 @@
 fun main() {
-//       *
-//      ***
-//     *****
-//    *******
 
-    var stars = "*"
-    for (i in 1..5) {
-        for (j in 5 downTo i) {
-            print(" ")
+    fun printStars(num: Int) {
+        for (j in 1..num) {
+            print("*")
         }
-        print(stars)
-        stars=stars+"**"
         println()
     }
+
+    fun triangle(height: Int) {
+        for (i in 1..height) {
+            printStars(i)
+        }
+    }
+
+    triangle(5)
 }
