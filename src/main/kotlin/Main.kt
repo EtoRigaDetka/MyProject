@@ -1,17 +1,18 @@
+
+
+
+
 fun main() {
-
-    fun printStars(num: Int) {
-        for (j in 1..num) {
-            print("*")
-        }
-        println()
+var arr: Int = 0
+fun factorial(number:Int):Int{
+     arr=number
+    var accumulator=1
+     for (result in 1..number){
+        accumulator=accumulator*result
     }
+return accumulator
+}
 
-    fun triangle(height: Int) {
-        for (i in 1..height) {
-            printStars(i)
-        }
-    }
+println("${factorial(6)} - is a fractal of $arr!")
 
-    triangle(5)
 }
